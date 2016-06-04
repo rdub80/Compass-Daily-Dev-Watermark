@@ -1,0 +1,48 @@
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* Small Screen Mobile ----------- */
+@media only screen and (max-width: 480px) {
+  body{
+    @include dev($devmode, ' - Small Screen Mobile');
+  }
+}
+
+/* Mobile ----------- */
+@media only screen and (min-width: 480px) {
+  body{
+    @include dev($devmode, ' - Mobile');
+  }
+}
+
+/* Tablets ----------- */
+@media only screen and (min-width: 768px) {
+  body{
+    @include dev($devmode, ' - Tablets');
+  }
+}
+
+/* Laptops ----------- */
+@media only screen and (min-width : 1024px) {
+  body{
+    @include dev($devmode, ' - Laptops');
+  }
+}
+
+/* Desktops ----------- */
+@media only screen and (min-width : 1367px) {
+  body{
+    @include dev($devmode, ' - Desktops');
+  }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+  body{
+    @include dev($devmode, ' - Large screens');
+  }
+}

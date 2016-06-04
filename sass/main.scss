@@ -1,0 +1,32 @@
+/*!
+ * CSS Compiled on: #{timestamp()}
+ */
+@import "compass/css3";
+
+// for development tracking
+$devmode:true;
+
+@mixin dev($devmode, $msg:"", $today: "#{today()}") {
+
+   @if ($devmode) {
+        &:after { //for development only
+            content: 'updated '+ $today + $msg;
+            position: fixed;
+            top: 1rem;
+            right: 1rem;
+            background: #fff;
+            @include box-shadow(4px 4px 8px 0px rgba(0,0,0,0.12));
+            @include border-radius(20px);
+            @include opacity(0.8);
+            text-align: center;
+            padding: 0 1rem;
+            font-family: courier;
+            color:#333;
+            z-index: 10000;
+        }
+    }
+}
+
+@import "normalize"; //https://necolas.github.io/normalize.css/4.1.1/normalize.css
+@import "partials/page";
+@import "partials/media";
