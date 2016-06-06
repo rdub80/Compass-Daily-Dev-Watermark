@@ -79,6 +79,8 @@ Alternatively, for Unix-style time stamp, use `#{unix_timestamp()}`.
     @include dev($devmode, " - your comment here");
 	```
 
+(5. Update your watermark in Terminal `compass compile --force` if your latest project edits did not include styles.)
+
 ### Example:
 
 ```scss
